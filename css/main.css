@@ -94,7 +94,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-<* MOBILE FIRST STYLES ====================== */
+/* MOBILE FIRST STYLES ====================== */
 
 html {
     background-color: #fff;
@@ -153,7 +153,16 @@ a {
     color: #fff;
 }
 
+footer {
+    padding-top: 2em;
+    padding-bottom: 4em;
+    margin: auto;
+}
 
+footer p {
+    font-size: 1em;
+    text-align: center;
+}
 
 
 
@@ -314,7 +323,9 @@ a {
         font-size: 1.2em;
     }
     
-    
+    footer p {
+        font-size: 1.2em;
+    }
     
     
     
