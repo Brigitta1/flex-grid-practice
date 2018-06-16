@@ -94,7 +94,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+<* MOBILE FIRST STYLES ====================== */
 
 html {
     background-color: #fff;
@@ -109,7 +109,7 @@ body {
 }
 
 .wrapper {
-    /*add display:flex and set justify-content to space-between*/
+
     font-weight: bold;   
     display: -webkit-box;
     display: -moz-box;
@@ -118,17 +118,16 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
 }
 
 .div-1, .div-2, .div-3 {
-    /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
     color: #fff;
     line-height: 1.5em;
     font-size: 1em;
     background-color: #f16059;
-    height: 300px;
-    width: 30%;
+    height: 220px;
+    width: 100%;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -136,7 +135,41 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
 }
+
+.greeting {
+    margin-bottom: 2em;
+}
+
+.intro {
+    margin-bottom: 2em;
+}
+
+
+a {
+    text-decoration:;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -223,24 +256,74 @@ body {
 
 @media all and (min-width: 600px) {
   .aside { flex: 1 auto; }
+
+  
+.wrapper {
+
+    font-weight: bold;   
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
-@media all and (min-width: 800px) {
-  .main {
-  }
-  .main {
-    order: 1;
-  }
-  .aside-1  {
-    order: 2;
-  }
-  .aside-2 {
-    order: 3;
-  }
+.div-1, .div-2, .div-3 {
+    color: #fff;
+    line-height: 1.5em;
+    font-size: 1em;
+    background-color: #f16059;
+    height: 300px;
+    width: 30%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-  .footer {
-    order: 4;
-  }
+
+
+}
+
+
+@media all and (min-width: 1000px) {
+  
+    .greeting {
+        margin-bottom: 8em;
+    }
+    
+    .greeting h1 {
+        font-size: 3em;
+    }
+    
+    .intro {
+        margin-bottom: 4em;
+    }
+    
+    .intro p {
+        font-size: 1.6em;
+    }
+    
+    .wrapper p {
+        font-size: 1.2em;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
 
 @media print,
