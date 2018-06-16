@@ -97,7 +97,8 @@ textarea {
 /* MOBILE FIRST STYLES ====================== */
 
 html {
-    background-color: #fff;
+    background: url('../img/background.jpg') no-repeat;
+    background-size: auto;
     height: 100%;
 }
 body {
@@ -106,6 +107,7 @@ body {
     padding: 2em; 
     font-size: 1em;
     height: 100%;
+    color: #fff;
 }
 
 .wrapper {
@@ -125,7 +127,7 @@ body {
     color: #fff;
     line-height: 1.5em;
     font-size: 1em;
-    background-color: #f16059;
+    background-color:;
     height: 220px;
     width: 100%;
     display: -webkit-box;
@@ -137,6 +139,7 @@ body {
     align-items: center;
     margin-bottom: 20px;
     padding: 10px;
+    border-bottom: 2px solid #f7b733;
 }
 
 .greeting {
@@ -144,9 +147,17 @@ body {
 }
 
 .intro {
-    margin-bottom: 2em;
+    padding-bottom: 2em;
+    border-bottom: 2px solid #f7b733; /*#fc4a1a;*/
 }
 
+#colorchange {
+    color: #f7b733;
+}
+
+#strong {
+    font-weight: 700;
+}
 
 a {
     text-decoration:;
@@ -155,8 +166,8 @@ a {
 
 footer {
     padding-top: 2em;
-    padding-bottom: 4em;
-    margin: auto;
+    margin-bottom: 2em;
+    
 }
 
 footer p {
@@ -284,7 +295,7 @@ footer p {
     color: #fff;
     line-height: 1.5em;
     font-size: 1em;
-    background-color: #f16059;
+    background-color:;
     height: 300px;
     width: 30%;
     display: -webkit-box;
