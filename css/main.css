@@ -104,22 +104,38 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
     padding: 2em; 
-    font-size: 1.25em;
+    font-size: 1em;
     height: 100%;
 }
 
 .wrapper {
     /*add display:flex and set justify-content to space-between*/
     font-weight: bold;   
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 .div-1, .div-2, .div-3 {
     /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
     color: #fff;
     line-height: 1.5em;
-    font-size: 1.6em;
+    font-size: 1em;
     background-color: #f16059;
     height: 300px;
+    width: 30%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
