@@ -97,8 +97,8 @@ textarea {
 /* MOBILE FIRST STYLES ====================== */
 
 html {
-    background: url('../img/background.jpg') no-repeat;
-    background-size: auto;
+    background: url('../img/bike-bkg.jpg') no-repeat;
+    background-size: 1200px 1500px;
     height: 100%;
 }
 body {
@@ -274,10 +274,15 @@ footer p {
    Modify as content requires.
    ========================================================================== */
 
+
 @media all and (min-width: 600px) {
   .aside { flex: 1 auto; }
 
-  
+    html {
+        background-position: 100%;
+        background-size: auto;
+    }
+    
 .wrapper {
 
     font-weight: bold;   
@@ -343,6 +348,10 @@ footer p {
     .wrapper p {
         font-size: 1.2em;
         padding-top: 0;
+    }
+    
+    .div-1 p, .div-2 p, div-3 p {
+        margin-right: 5px;
     }
     
     footer p {
